@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lalitha's Page
+        </title>
+        <style>
+            .display-flex
+            {
+                justify-content: center;
+                text-align: center;
+                padding: 10px;
+            }
+            .name
+            {
+                text-align: center;
+                margin: 20px;
+            }
+            .add-student{
+                text-align: center;
+                margin: 20px;
+                background-color: rgb(0, 140, 255);
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1><center>Student Manager</center></h1>
+        <form>
+            <div class="display-flex">
+            <div class="name">
+            <input type="text" id="nameInput" placeholder="Name"/>
+            </div>
+            <div class="name">
+                <input type="number" id="ageInput" placeholder="Age"/>
+            </div>
+            <div class="name">
+                <input type="text" id="courseInput" placeholder="Course"/>
+            </div>
+            <div class="name">
+                <button class="add-student" onclick="addStudent(event)">Add Student</button>
+            </div>
+            <div id="studentList"></div>
+            </div>
+            <script src="manager.js"></script>
+        </form>
+    </body>
+</html>
